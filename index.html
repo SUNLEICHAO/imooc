@@ -1,16 +1,565 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>慕课网</title>
-  <meta name="description" content="慕课网（IMOOC）是IT技能学习平台。慕课网(IMOOC)课程涉及JAVA、前端、Python、大数据等60类主流技术语言，覆盖了面试就业、职业成长、自我提升等需求场景，帮助用户实现从技能提升到岗位提升的能力闭环。">
+  <meta name="description"
+    content="慕课网（IMOOC）是IT技能学习平台。慕课网(IMOOC)课程涉及JAVA、前端、Python、大数据等60类主流技术语言，覆盖了面试就业、职业成长、自我提升等需求场景，帮助用户实现从技能提升到岗位提升的能力闭环。">
   <meta name="keywords" content="慕课网，imooc，JAVA，前端，Python，大数据">
-  
+
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./font_4323587_jn07xj3b9x9/iconfont.css">
 </head>
+
 <body>
-  
+  <header class="page-header">
+    <div class="header-top-banner">
+      <img src="./img/top-banner.jpg" alt="" class="header-top-banner-img">
+    </div>
+    <div class="header-background">
+      <div class="header-container">
+        <div class="header-left">
+          <div class="header-logo">
+            <a href="https://www.imooc.com/" class="header-logo-link">
+              <img class="header-logo-img" src="./img/logo.png" alt="">
+            </a>
+          </div>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="javascript:;">免费课</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="javascript:;">实战课</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link icon-new" href="javascript:;">体系课</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="javascript:;">发现</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="javascript:;">企业服务</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="javascript:;">讲师入驻</a>
+            </li>
+          </ul>
+
+          <div class="header-nav-search">
+            <input type="text" class="nav-search-input" placeholder="请输入关键字…">
+            <div class="nav-search-info">
+              <a class="nav-search-info-item gpt">GPT</a>
+              <a class="nav-search-info-item python">Python</a>
+            </div>
+            <a href="javascript" class="nav-search-btn">
+              <span class="iconfont icon-search"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header-user">
+          <div class="user-cart">
+            <span class="iconfont icon-ai66"></span>
+          </div>
+          <div class="user-container">
+            <a class="user-signup" href="javascript:;">登录</a>
+            <span class="user-separate">/</span>
+            <a class="user-signin" href="javascript:;">注册</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="box">
+      <span class="iconfont icon-search"></span>
+    </div> -->
+  </header>
+
+  <div class="page-body">
+
+    <!-- banner展示栏 -->
+    <div class="banner-section">
+      <div class="banner-container">
+        <div class="banner-menu">
+          <ul class="banner-menu-list">
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">前端开发：</span>
+              <span class="banner-menu-item__subtitle">HTML5 / Vue.js / Node.js</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">后端开发：</span>
+              <span class="banner-menu-item__subtitle">Java / Python / Go</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">移动开发：</span>
+              <span class="banner-menu-item__subtitle">Flutter / Android / iOS </span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">计算机基础：</span>
+              <span class="banner-menu-item__subtitle">算法 / 数学 / 数据库</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">前沿技术：</span>
+              <span class="banner-menu-item__subtitle">AI / 大数据 / 数据分析</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">测试运维：</span>
+              <span class="banner-menu-item__subtitle">自动化测试 / 容器</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+            <li class="banner-menu-item">
+              <span class="banner-menu-item__title">更多方向：</span>
+              <span class="banner-menu-item__subtitle">产品设计 / UI设计 / 游戏</span>
+              <span class="iconfont icon-arrow-right"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="banner-swiper">
+          <div class="banner-swiper-img">
+            <img class="banner-swiper-img-item" src="./img/swiper1.jpg" alt="">
+          </div>
+          <div class="banner-swiper-indicator">
+            <div class="indicator-item"></div>
+            <div class="indicator-item"></div>
+            <div class="indicator-item"></div>
+            <div class="indicator-item"></div>
+            <div class="indicator-item"></div>
+            <div class="indicator-item"></div>
+          </div>
+          <div class="banner-swiper-dots">
+            <div class="banner-swiper-dot prev"></div>
+            <div class="banner-swiper-dot next"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-career">
+        <div class="career-list">
+          <div class="career-item">
+            <div class="career-item-cover">
+              <img src="./img/career-java.jpg" alt="" class="career-item-cover-img">
+            </div>
+            <div class="career-item-content">
+              <div class="career-item-content__title">Java工程师</div>
+              <div class="career-item-content__desc">助力成就硬核工程师</div>
+            </div>
+          </div>
+          <div class="career-item">
+            <div class="career-item-cover">
+              <img src="./img/career-frontend.jpg" alt="" class="career-item-cover-img">
+            </div>
+            <div class="career-item-content">
+              <div class="career-item-content__title">前端工程师</div>
+              <div class="career-item-content__desc">0基础入门，高水准就业</div>
+            </div>
+          </div>
+          <div class="career-item">
+            <div class="career-item-cover">
+              <img src="./img/career-python.jpg" alt="" class="career-item-cover-img">
+            </div>
+            <div class="career-item-content">
+              <div class="career-item-content__title">Python工程师</div>
+              <div class="career-item-content__desc">全能人才的首选</div>
+            </div>
+          </div>
+          <div class="career-item">
+            <div class="career-item-cover">
+              <img src="./img/career-embed.jpg" alt="" class="career-item-cover-img">
+            </div>
+            <div class="career-item-content">
+              <div class="career-item-content__title">嵌入式工程师</div>
+              <div class="career-item-content__desc">蓝海风口，就业稳定</div>
+            </div>
+          </div>
+          <div class="career-item">
+            <div class="career-item-cover">
+              <img src="./img/career-llm.jpg" alt="" class="career-item-cover-img">
+            </div>
+            <div class="career-item-content">
+              <div class="career-item-content__title">LLM大语言模型</div>
+              <div class="career-item-content__desc">行业前沿技术</div>
+            </div>
+          </div>
+        </div>
+        <div class="career-line"></div>
+        <div class="career-more">
+          <a class="career-more-text" href="javascript:;">体系课</a>
+          <a class="career-more-arrow" href="javascript:;">
+            more
+            <span class="iconfont icon-arrow"></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 新上好课 -->
+    <div class="new-sectioon">
+      <div class="new-topic-list">
+        <a href="javascript:;" class="new-topic-item active">推荐</a>
+        <a href="javascript:;" class="new-topic-item">前端开发</a>
+        <a href="javascript:;" class="new-topic-item">后端开发</a>
+        <a href="javascript:;" class="new-topic-item">精品免费</a>
+      </div>
+      <div class="new-list">
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-flask.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">Python Flask 全流程全栈项目实战</div>
+          <div class="new-item-desc item-desc">初级 · 6人报名 </div>
+          <div class="new-item-price item-price">￥199.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-qt.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">Qt 全流程实战企业级项目 - 云对象存储浏览器</div>
+          <div class="new-item-desc item-desc">初级 · 14人报名 </div>
+          <div class="new-item-price item-price">￥599.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-aipainting.png" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">职场必备AI课 AI高效办公训练营 </div>
+          <div class="new-item-desc item-desc">入门 · 26人报名 </div>
+          <div class="new-item-price item-price">￥99.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-database.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">技术大牛成长课,从0到1带你手写一个数据库系统</div>
+          <div class="new-item-desc item-desc">高级 · 101人报名 </div>
+          <div class="new-item-price item-price">￥699.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-datavis.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">Python+Vue 全栈开发BI数据可视化项目</div>
+          <div class="new-item-desc item-desc">初级 · 20人报名 </div>
+          <div class="new-item-price item-price">￥199.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-opengl.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">系统玩转OpenGL+AI，实现各种酷炫视频特效</div>
+          <div class="new-item-desc item-desc">中级 · 41人报名 </div>
+          <div class="new-item-price item-price">￥299.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-cpp.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">C++数据开放平台实战，手把手教你做工业级项目</div>
+          <div class="new-item-desc item-desc">中级 · 31人报名 </div>
+          <div class="new-item-price item-price">￥568.00</div>
+        </a>
+        <a href="javascript" class="new-item">
+          <div class="new-item-cover">
+            <img src="./img/new-wechat.jpg" alt="" class="new-item-cover__img">
+          </div>
+          <div class="new-item-title item-title">前端高手特训 从0到1带你手写一个微信小程序底层框架</div>
+          <div class="new-item-desc item-desc">高级 · 32人报名 </div>
+          <div class="new-item-price item-price">￥299.00</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 慕课榜单 -->
+    <div class="rank-section">
+      <div class="rank-intro">
+        <span class="rank-intro-text">以近7日购买、学习相关数据为依据；每日更新</span>
+      </div>
+      <div class="rank-container">
+        <!-- 畅销榜 -->
+        <div class="rank-sale">
+          <div class="rank-title">畅销榜</div>
+          <div class="rank-list">
+            <a class="rank-item linux">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title">Linux系统 从入门到进阶-2023全新版</div>
+                <div class="rank-item__content-price item-price">¥169.00</div>
+                <div class="rank-item__content-desc item-desc">150人在学</div>
+              </div>
+            </a>
+            <a class="rank-item database">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title">技术大牛成长课,从0到1带你手写一个数据库系统</div>
+                <div class="rank-item__content-price item-price">¥699.00</div>
+                <div class="rank-item__content-desc item-desc">102人在学</div>
+              </div>
+            </a>
+            <a class="rank-item vue3">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title text-ellipsis-2line">进阶必学，2023最新 ，打造媲美ElementPlus的组件库</div>
+                <div class="rank-item__content-price item-price">¥399.00</div>
+                <div class="rank-item__content-desc item-desc">223人在学</div>
+              </div>
+            </a>
+          </div>
+          <div class="rank-sale-more btn-more">
+            查看完整榜单&nbsp;
+            <span class="iconfont icon-arrow-double"></span>
+          </div>
+        </div>
+        <!-- 新课榜 -->
+        <div class="rank-new">
+          <div class="rank-title">新课榜</div>
+          <div class="rank-list">
+            <a class="rank-item linux">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title">从0到1落地微前端架构， MicroApp实战招聘网站</div>
+                <div class="rank-item__content-price item-price">¥199.00</div>
+                <div class="rank-item__content-desc item-desc">难度 高级</div>
+              </div>
+            </a>
+            <a class="rank-item database">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title text-ellipsis-2line">AI人人必修-提示词工程+大模型多场景实战（丰富资料)</div>
+                <div class="rank-item__content-price item-price">¥299.00</div>
+                <div class="rank-item__content-desc item-desc">难度 初级</div>
+              </div>
+            </a>
+            <a class="rank-item vue3">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title text-ellipsis-2line">前端高手特训  从0到1带你手写一个微信小程序底层框架</div>
+                <div class="rank-item__content-price item-price">¥299.00</div>
+                <div class="rank-item__content-desc item-desc">难度 高级</div>
+              </div>
+            </a>
+          </div>
+          <div class="rank-more btn-more">
+            查看完整榜单&nbsp;
+            <span class="iconfont icon-arrow-double"></span>
+          </div>
+        </div>
+        <!-- 学习榜 -->
+        <div class="rank-study">
+          <div class="rank-title">学习榜</div>
+          <div class="rank-list">
+            <a class="rank-item linux">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title">Python3.8系统入门+进阶 (程序员必备第二语言)</div>
+                <div class="rank-item__content-price item-price">¥366.00</div>
+                <div class="rank-item__content-desc item-desc">14078人在学</div>
+              </div>
+            </a>
+            <a class="rank-item database">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title">前端框架及项目面试 聚焦Vue3/React/Webpack</div>
+                <div class="rank-item__content-price item-price">¥399.00</div>
+                <div class="rank-item__content-desc item-desc">4513人在学</div>
+              </div>
+            </a>
+            <a class="rank-item vue3">
+              <div class="rank-item__num"></div>
+              <div class="rank-item__cover"></div>
+              <div class="rank-item__content">
+                <div class="rank-item__content-title item-title text-ellipsis-2line">30天 零基础 系统化学会C++</div>
+                <div class="rank-item__content-price item-price">¥99.00</div>
+                <div class="rank-item__content-desc item-desc">449人在学</div>
+              </div>
+            </a>
+          </div>
+          <div class="rank-sale-more btn-more">
+            查看完整榜单&nbsp;
+            <span class="iconfont icon-arrow-double"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 进站必学 -->
+    <div class="recommend-section">
+      <div class="recommend-topic-list">
+        <a href="javascript:;" class="recommend-topic-item active">推荐</a>
+        <a href="javascript:;" class="recommend-topic-item">计算机基础</a>
+        <a href="javascript:;" class="recommend-topic-item">前端开发</a>
+        <a href="javascript:;" class="recommend-topic-item">后端开发</a>
+        <a href="javascript:;" class="recommend-topic-item">精品免费</a>
+      </div>
+      <div class="recommend-list">
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-react.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">最新 React 技术栈，实战复杂低代码项目-仿问卷星</div>
+          <div class="recommend-item-desc item-desc">中级 · 234人报名 </div>
+          <div class="recommend-item-price item-price">￥999.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-drive.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">多端全栈项目实战，大型商业级代驾业务全流程落地</div>
+          <div class="recommend-item-desc item-desc">中级 · 448人报名 </div>
+          <div class="recommend-item-price item-price">￥1299.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-springcloud.jpg" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">SpringCloudAlibaba高并发仿斗鱼直播平台实战</div>
+          <div class="recommend-item-desc item-desc">中级 · 207人报名 </div>
+          <div class="recommend-item-price item-price">￥699.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-datastructe.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">算法与数据结构高手养成-求职提升特训课</div>
+          <div class="recommend-item-desc item-desc">中级 · 233人报名 </div>
+          <div class="recommend-item-price item-price">￥1299.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="new-item-cover">
+            <img src="./img/recommend-webgl.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">WebGL+Three.js 入门与实战，系统学习 Web3D 技术</div>
+          <div class="recommend-item-desc item-desc">入门 · 836人报名 </div>
+          <div class="recommend-item-price item-price">￥348.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-vue3.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">Vue3源码解析，打造自己的Vue3框架，领悟尤大思维精髓</div>
+          <div class="recommend-item-desc item-desc">高级 · 312人报名 </div>
+          <div class="recommend-item-price item-price">￥599.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-test.jpg" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">前端面试全家桶，从求职准备到面试演练</div>
+          <div class="recommend-item-desc item-desc">中级 · 246人报名 </div>
+          <div class="recommend-item-price item-price">￥1299.00</div>
+        </a>
+        <a href="javascript" class="recommend-item">
+          <div class="recommend-item-cover">
+            <img src="./img/recommend-linux.png" alt="" class="recommend-item-cover__img">
+          </div>
+          <div class="recommend-item-title item-title">Linux系统 从入门到进阶-2023全新版</div>
+          <div class="recommend-item-desc item-desc">中级 · 150人报名 </div>
+          <div class="recommend-item-price item-price">￥169.00</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 学习路线 -->
+    <div class="path-section">
+      <div class="path-topic-container">
+
+        <div class="path-topic-list">
+          <a href="javascript:;" class="path-topic-item active">推荐</a>
+          <a href="javascript:;" class="path-topic-item">前端开发</a>
+          <a href="javascript:;" class="path-topic-item">后端开发</a>
+          <a href="javascript:;" class="path-topic-item">移动开发</a>
+        </div>
+        <div class="path-topic-more">
+          全部
+          <span class="iconfont icon-arrow"></span>
+        </div>
+      </div>
+      <div class="path-list">
+        <a href="javascript" class="path-item">
+          <div class="path-item-cover">
+            <img src="./img/path-python.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title text-ellipsis-2line">从Python入门/统计学基础到工业级量化交易策略实战，能力逐步提升，让你成为职业的量化交易开发工程师，进军前景可观的金融高薪领域。
+          </div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">4步骤 · 4门课</span>
+            <span class="path-item-desc__favor">174收藏</span>
+          </div>
+        </a>
+        <a href="javascript" class="path-item">
+          <div class="path-item-cover">
+            <img src="./img/path-k8s.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title text-ellipsis-2line">K8s系统性入门到深入原理，以及生产落地实践，充分运用K8s特性进行云原生微服务领域开发，并掌握云原生底层的开发技术。</div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">4步骤 · 4门课</span>
+            <span class="path-item-desc__favor">44收藏</span>
+          </div>
+        </a>
+        <a href="javascript" class="path-item">
+          <div class="path-item-cover">
+            <img src="./img/path-java.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title text-ellipsis-2line">路线吃透面试学问，伴随身为Java工程师的你一路成长，高效充分准备面试拿offer。</div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">3步骤 · 4门课</span>
+            <span class="path-item-desc__favor">11298收藏</span>
+          </div>
+        </a>
+        <a href="javascript" class="path-item">
+          <div class="path-item-cover">
+            <img src="./img/path-computer.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title">本路线精选程序员必修的计算机基础核心知识，有序打基础职场走更远。</div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">5步骤 · 5门课</span>
+            <span class="path-item-desc__favor">11278收藏</span>
+          </div>
+        </a>
+        <a href="javascript" class="path-item">
+          <div class="new-item-cover">
+            <img src="./img/path-algorithm.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title">大厂校招、社招 算法数据结构类问题一网打尽。</div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">4步骤 · 4门课</span>
+            <span class="path-item-desc__favor">87收藏</span>
+          </div>
+        </a>
+        <a href="javascript" class="path-item">
+          <div class="path-item-cover">
+            <img src="./img/path-5g.png" alt="" class="path-item-cover__img">
+          </div>
+          <div class="path-item-title item-title">对标大厂岗位需求，从音视频基础入门、处理核心技术到服务器设计开发 ，全面培养5G时代人才。</div>
+          <div class="path-item-desc item-desc">
+            <span class="path-item-desc__hour">6步骤 · 6门课</span>
+            <span class="path-item-desc__favor">1217收藏</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <footer class="page-footer">
+
+  </footer>
 </body>
+
 </html>
