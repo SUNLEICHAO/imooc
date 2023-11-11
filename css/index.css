@@ -55,22 +55,18 @@ a {
 /* 以上为通用样式 */
 
 .header-top-banner {
-  position: relative;
   display: flex;
   min-width: 1152px;
   max-width: 2560px;
+  margin: 0 auto;
   height: 48px;
   cursor: pointer;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .header-top-banner-img {
   position: relative;
-  height: 48px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .header-background {
