@@ -59,16 +59,17 @@ a {
   display: flex;
   min-width: 1152px;
   max-width: 2560px;
-  overflow: hidden;
+  height: 48px;
+  /* overflow: hidden; */
   cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 .header-top-banner-img {
-  position: relative;
-  top: 0;
-  left: 50%;
-  height: 48px;
-  transform: translateX(-50%);
+  /* position: relative; */
+  /* top: 0; */
 }
 
 .header-background {
