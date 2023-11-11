@@ -60,16 +60,17 @@ a {
   min-width: 1152px;
   max-width: 2560px;
   height: 48px;
-  /* overflow: hidden; */
   cursor: pointer;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .header-top-banner-img {
-  /* position: relative; */
-  /* top: 0; */
+  position: relative;
+  height: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 .header-background {
