@@ -60,6 +60,7 @@ a {
   max-width: 2560px;
   margin: 0 auto;
   height: 48px;
+  overflow: hidden;
   cursor: pointer;
 }
 
